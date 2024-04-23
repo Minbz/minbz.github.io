@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['placetileat_0',['PlaceTileAt',['../struct_tile_map.html#a6105c5b7e55d4cc14f0afa8dfeef14e5',1,'TileMap']]],
-  ['pybind11_5fmodule_1',['PYBIND11_MODULE',['../bindings_8cpp.html#a7055eab01d08d97ed2dd849c3e02cda7',1,'bindings.cpp']]]
+  ['main_0',['main',['../d2/dc1/namespacemain.html#a3140e9a5b6a71ffbf498198cfc471b88',1,'main']]],
+  ['make_5fshared_5ftexture_1',['make_shared_texture',['../d6/d7b/_resource_manager_8hpp.html#aa68b14d4ed8455460b3579ef4503d106',1,'make_shared_texture(SDL_Renderer *renderer, SDL_Surface *pixels):&#160;ResourceManager.cpp'],['../d1/d8d/_resource_manager_8cpp.html#aa68b14d4ed8455460b3579ef4503d106',1,'make_shared_texture(SDL_Renderer *renderer, SDL_Surface *pixels):&#160;ResourceManager.cpp']]],
+  ['movex_2',['MoveX',['../d2/d15/struct_game_entity.html#a69da34d4691b45032bd0ad1fae897eb3',1,'GameEntity']]],
+  ['movey_3',['MoveY',['../d2/d15/struct_game_entity.html#a42fb88c99aaae0f21c3433ce77fdf243',1,'GameEntity']]]
 ];

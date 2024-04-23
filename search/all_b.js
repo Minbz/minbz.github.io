@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['operator_28_29_0',['operator()',['../struct_texture_functor_deleter.html#a24fe0ece0de41bcb600f5776f72521fa',1,'TextureFunctorDeleter']]]
+  ['main_0',['main',['../d2/dc1/namespacemain.html',1,'main'],['../d2/dc1/namespacemain.html#a3140e9a5b6a71ffbf498198cfc471b88',1,'main.main()']]],
+  ['main_2epy_1',['main.py',['../dc/dba/main_8py.html',1,'']]],
+  ['make_5fshared_5ftexture_2',['make_shared_texture',['../d6/d7b/_resource_manager_8hpp.html#aa68b14d4ed8455460b3579ef4503d106',1,'make_shared_texture(SDL_Renderer *renderer, SDL_Surface *pixels):&#160;ResourceManager.cpp'],['../d1/d8d/_resource_manager_8cpp.html#aa68b14d4ed8455460b3579ef4503d106',1,'make_shared_texture(SDL_Renderer *renderer, SDL_Surface *pixels):&#160;ResourceManager.cpp']]],
+  ['max_5fhealth_3',['max_health',['../de/dc7/classobjects_1_1_combatant.html#a685ec2d73a4bfc8a47d879c6e99be0fe',1,'objects::Combatant']]],
+  ['movex_4',['MoveX',['../d2/d15/struct_game_entity.html#a69da34d4691b45032bd0ad1fae897eb3',1,'GameEntity']]],
+  ['movey_5',['MoveY',['../d2/d15/struct_game_entity.html#a42fb88c99aaae0f21c3433ce77fdf243',1,'GameEntity']]]
 ];

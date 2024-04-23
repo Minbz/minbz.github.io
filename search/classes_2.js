@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gameentity_0',['GameEntity',['../struct_game_entity.html',1,'']]]
+  ['enemy_0',['Enemy',['../df/df3/classobjects_1_1_enemy.html',1,'objects']]]
 ];

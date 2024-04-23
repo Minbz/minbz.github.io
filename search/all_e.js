@@ -1,21 +1,15 @@
 var searchData=
 [
-  ['sdlgraphicsprogram_0',['SDLGraphicsProgram',['../class_s_d_l_graphics_program.html',1,'SDLGraphicsProgram'],['../class_s_d_l_graphics_program.html#aaa8529250defd627821192e550a32188',1,'SDLGraphicsProgram::SDLGraphicsProgram()']]],
-  ['sdlgraphicsprogram_1',['SDLGRAPHICSPROGRAM',['../_s_d_l_graphics_program_8hpp.html#a8be3d2000b2dbeff87d1c35dd045564b',1,'SDLGraphicsProgram.hpp']]],
-  ['sdlgraphicsprogram_2ecpp_2',['SDLGraphicsProgram.cpp',['../_s_d_l_graphics_program_8cpp.html',1,'']]],
-  ['sdlgraphicsprogram_2ehpp_3',['SDLGraphicsProgram.hpp',['../_s_d_l_graphics_program_8hpp.html',1,'']]],
-  ['setflip_4',['SetFlip',['../struct_game_entity.html#a2117ea5e6c4ba82ea13167ff5d1c8fcc',1,'GameEntity']]],
-  ['setframeconfig_5',['SetFrameConfig',['../struct_single_animation.html#a0bd311fed6492af9c6752435afc2c844',1,'SingleAnimation']]],
-  ['setgameentity_6',['SetGameEntity',['../struct_component.html#a92fc19214ae6a73ee22824d85d1a1b99',1,'Component']]],
-  ['setheight_7',['SetHeight',['../struct_collision2_d_component.html#ad56476f3936639dd570848afe1f3eb6c',1,'Collision2DComponent::SetHeight()'],['../struct_transform_component.html#a31215e1bb6c87e7392cbc6b85a1a6767',1,'TransformComponent::SetHeight()']]],
-  ['setname_8',['SetName',['../struct_game_entity.html#aa48a3a64bc80d6e199301b9d5bac4409',1,'GameEntity']]],
-  ['setstate_9',['SetState',['../struct_game_entity.html#a9d4b536fc46b9ea4a63539ba1ff1aad0',1,'GameEntity']]],
-  ['setwh_10',['SetWH',['../struct_collision2_d_component.html#abd832fdc022f80dfee1e20070f42f941',1,'Collision2DComponent::SetWH()'],['../struct_transform_component.html#a198f76af633557e85027771f60867432',1,'TransformComponent::SetWH()']]],
-  ['setwidth_11',['SetWidth',['../struct_collision2_d_component.html#abe76e11057f8b85000d19826708f53e4',1,'Collision2DComponent::SetWidth()'],['../struct_transform_component.html#a0119c24801e850b62e2fc1bde2c39566',1,'TransformComponent::SetWidth()']]],
-  ['setx_12',['SetX',['../struct_collision2_d_component.html#adfd8f5fd9c0bba9265042981ea400c14',1,'Collision2DComponent::SetX()'],['../struct_transform_component.html#a8052d38b75f03094e781481212878589',1,'TransformComponent::SetX()']]],
-  ['setxy_13',['SetXY',['../struct_collision2_d_component.html#a24ce405b955155836317f1c027631b86',1,'Collision2DComponent::SetXY()'],['../struct_transform_component.html#a1977fcd1d8cd835aea71651f18cc9ea4',1,'TransformComponent::SetXY()']]],
-  ['sety_14',['SetY',['../struct_collision2_d_component.html#a3a08e1d987d66f141a3cddaa991606bf',1,'Collision2DComponent::SetY()'],['../struct_transform_component.html#ab7df147cf1e48361aec3f96573278a09',1,'TransformComponent::SetY()']]],
-  ['singleanimation_15',['SingleAnimation',['../struct_single_animation.html',1,'SingleAnimation'],['../struct_single_animation.html#a12b20ae8e5b8eb441b3de64af2859bcf',1,'SingleAnimation::SingleAnimation()']]],
-  ['singleanimation_2ecpp_16',['SingleAnimation.cpp',['../_single_animation_8cpp.html',1,'']]],
-  ['singleanimation_2ehpp_17',['SingleAnimation.hpp',['../_single_animation_8hpp.html',1,'']]]
+  ['read_5fconfig_0',['read_config',['../de/dfd/namespaceconfig__manager.html#a7112a91193564d5a704fd31593977dab',1,'config_manager']]],
+  ['readme_2emd_1',['README.md',['../d9/dd6/_r_e_a_d_m_e_8md.html',1,'']]],
+  ['render_2',['render',['../d3/db8/classobjects_1_1_object.html#ad934fc92ca94eb38ae3a4820b469dd5f',1,'objects.Object.render()'],['../de/dc7/classobjects_1_1_combatant.html#a82ccbdaac5509f406c5ae1af3ef0a1b9',1,'objects.Combatant.render()'],['../df/df3/classobjects_1_1_enemy.html#a8207d4a728143251ec9cab678fc9be12',1,'objects.Enemy.render()']]],
+  ['render_3',['Render',['../dd/d4e/struct_animation_component.html#a9275384cc6f7bf2084b1b8b6542efdd0',1,'AnimationComponent::Render()'],['../d9/d03/struct_collision2_d_component.html#a1c5ae84271e0904112be7b33dbb2a72b',1,'Collision2DComponent::Render()'],['../d0/d9d/struct_component.html#a125afdcd756ed53a23d40ac56d640031',1,'Component::Render()'],['../d2/d15/struct_game_entity.html#a4e65db9e4d68e7a0d56ce29bc0143d81',1,'GameEntity::Render()'],['../d5/dac/struct_texture_component.html#a27f0711a707cc6fdb74808c97254a24a',1,'TextureComponent::Render()'],['../d1/d3e/struct_tile_map.html#aa6d79b9ae7a46d088d160e7727694812',1,'TileMap::Render()'],['../da/dd7/struct_transform_component.html#a2f5c47243b16b4a3e12b463c6afe0076',1,'TransformComponent::Render()']]],
+  ['renderframe_4',['RenderFrame',['../d9/d4c/struct_single_animation.html#a7a087e6d763a2b8db2b82f3b23e6ff59',1,'SingleAnimation']]],
+  ['resetframe_5',['ResetFrame',['../d9/d4c/struct_single_animation.html#a51d1550fe01bd59600ea3c7b00f6cdf8',1,'SingleAnimation']]],
+  ['resourcemanager_6',['ResourceManager',['../da/d14/struct_resource_manager.html',1,'']]],
+  ['resourcemanager_2ecpp_7',['ResourceManager.cpp',['../d1/d8d/_resource_manager_8cpp.html',1,'']]],
+  ['resourcemanager_2ehpp_8',['ResourceManager.hpp',['../d6/d7b/_resource_manager_8hpp.html',1,'']]],
+  ['run_20the_20game_9',['Run the Game',['../d3/dcc/md__r_e_a_d_m_e.html#autotoc_md1',1,'']]],
+  ['run_20the_20level_20editor_10',['Run the Level Editor',['../d3/dcc/md__r_e_a_d_m_e.html#autotoc_md2',1,'']]],
+  ['running_11',['Running',['../d3/dcc/md__r_e_a_d_m_e.html',1,'']]]
 ];
