@@ -10,6 +10,10 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -50,6 +54,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('namespacemembers_vars.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -73,33 +93,36 @@ $(function() {
 
 <div class="contents">
 <div class="textblock">Here is a list of all namespace variables with links to the namespace documentation for each variable:</div><ul>
-<li>ARGUMENTS&#160;:&#160;<a class="el" href="d9/d55/namespacelinuxbuildengine.html#a2e8479cdcbd42925141c94325e72a57a">linuxbuildengine</a></li>
-<li>COMPILER&#160;:&#160;<a class="el" href="d9/d55/namespacelinuxbuildengine.html#a59703a202b2f2bcb2ea812892df6c085">linuxbuildengine</a></li>
-<li>compileString&#160;:&#160;<a class="el" href="d9/d55/namespacelinuxbuildengine.html#a2ae4143f189254b339d4f4442836f4bd">linuxbuildengine</a></li>
-<li>ENEMY_ATTACK_CD&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#a5ed6fbf7cb3e6aba410e78b6e56eb94a">objects</a></li>
-<li>ENEMY_ATTACK_DAMAGE&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#a6ade9a5633e77ae831790964baf43848">objects</a></li>
-<li>ENEMY_HURT_CD&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#aae01167ca9056b6d240ac8932fd3c5d9">objects</a></li>
-<li>ENEMY_MOVE_SPEED&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#a2251c25bd83fe46af987431b9ec95c1e">objects</a></li>
-<li>EXECUTABLE&#160;:&#160;<a class="el" href="d9/d55/namespacelinuxbuildengine.html#a81e86288bd5b4e54699261ce18a372aa">linuxbuildengine</a></li>
-<li>FILE_PATH&#160;:&#160;<a class="el" href="de/dfd/namespaceconfig__manager.html#a7dcbb15b3717f91bca4d5337e4d9fb0e">config_manager</a></li>
-<li>GLOBAL_CONFIG&#160;:&#160;<a class="el" href="d2/dc1/namespacemain.html#aaf5461525f7a4ade3ce3681d5f30d959">main</a></li>
-<li>HEALTH_BAR_FRAME_WIDTH&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#a6d0d8672fd153739eec87bf6b5ff8bf9">objects</a></li>
-<li>HEALTH_BAR_GAP&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#a41b23f4ec410ea0ad8bc858c1c57213b">objects</a></li>
-<li>HEALTH_BAR_HEIGHT&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#aa2c6251a84228ca4bd589951c7b82e2e">objects</a></li>
-<li>helper_dir&#160;:&#160;<a class="el" href="d2/dc1/namespacemain.html#ae71a4a0b83d32c5b4c31ae6673ee6265">main</a></li>
-<li>INCLUDE_DIR&#160;:&#160;<a class="el" href="d9/d55/namespacelinuxbuildengine.html#a9dc3fdedbfbe0814b35205cd612b2a2e">linuxbuildengine</a></li>
-<li>lib_dir&#160;:&#160;<a class="el" href="d2/dc1/namespacemain.html#a598de3c53b810ce396ac1730fbd94377">main</a></li>
-<li>LIBRARIES&#160;:&#160;<a class="el" href="d9/d55/namespacelinuxbuildengine.html#a4d547097faf4bbcb559e7dfe09827d79">linuxbuildengine</a></li>
-<li>PLAYER_ATTACK_CD&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#a873757e85220290bea21599ff9ca39dc">objects</a></li>
-<li>PLAYER_ATTACK_DAMAGE&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#ad7078d24471f64857c97d83d539d68ca">objects</a></li>
-<li>PLAYER_HURT_CD&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#a14a671a4fbce0b0c998599c09c31cf3a">objects</a></li>
-<li>PLAYER_MOVE_SPEED&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#a75e7d0c0e50d746670ef7c8488ddbe97">objects</a></li>
-<li>SOURCE&#160;:&#160;<a class="el" href="d9/d55/namespacelinuxbuildengine.html#ab6c0fa6eddfe3257edd752c619dd5aff">linuxbuildengine</a></li>
+<li>ARGUMENTS&#160;:&#160;<a class="el" href="namespacelinuxbuildengine.html#a2e8479cdcbd42925141c94325e72a57a">linuxbuildengine</a></li>
+<li>COMPILER&#160;:&#160;<a class="el" href="namespacelinuxbuildengine.html#a59703a202b2f2bcb2ea812892df6c085">linuxbuildengine</a></li>
+<li>compileString&#160;:&#160;<a class="el" href="namespacelinuxbuildengine.html#a2ae4143f189254b339d4f4442836f4bd">linuxbuildengine</a></li>
+<li>ENEMY_ATTACK_CD&#160;:&#160;<a class="el" href="namespaceobjects.html#a5ed6fbf7cb3e6aba410e78b6e56eb94a">objects</a></li>
+<li>ENEMY_ATTACK_DAMAGE&#160;:&#160;<a class="el" href="namespaceobjects.html#a6ade9a5633e77ae831790964baf43848">objects</a></li>
+<li>ENEMY_HURT_CD&#160;:&#160;<a class="el" href="namespaceobjects.html#aae01167ca9056b6d240ac8932fd3c5d9">objects</a></li>
+<li>ENEMY_MOVE_SPEED&#160;:&#160;<a class="el" href="namespaceobjects.html#a2251c25bd83fe46af987431b9ec95c1e">objects</a></li>
+<li>EXECUTABLE&#160;:&#160;<a class="el" href="namespacelinuxbuildengine.html#a81e86288bd5b4e54699261ce18a372aa">linuxbuildengine</a></li>
+<li>FILE_PATH&#160;:&#160;<a class="el" href="namespaceconfig__manager.html#a7dcbb15b3717f91bca4d5337e4d9fb0e">config_manager</a></li>
+<li>GLOBAL_CONFIG&#160;:&#160;<a class="el" href="namespacemain.html#aaf5461525f7a4ade3ce3681d5f30d959">main</a></li>
+<li>HEALTH_BAR_FRAME_WIDTH&#160;:&#160;<a class="el" href="namespaceobjects.html#a6d0d8672fd153739eec87bf6b5ff8bf9">objects</a></li>
+<li>HEALTH_BAR_GAP&#160;:&#160;<a class="el" href="namespaceobjects.html#a41b23f4ec410ea0ad8bc858c1c57213b">objects</a></li>
+<li>HEALTH_BAR_HEIGHT&#160;:&#160;<a class="el" href="namespaceobjects.html#aa2c6251a84228ca4bd589951c7b82e2e">objects</a></li>
+<li>helper_dir&#160;:&#160;<a class="el" href="namespacemain.html#ae71a4a0b83d32c5b4c31ae6673ee6265">main</a></li>
+<li>INCLUDE_DIR&#160;:&#160;<a class="el" href="namespacelinuxbuildengine.html#a9dc3fdedbfbe0814b35205cd612b2a2e">linuxbuildengine</a></li>
+<li>lib_dir&#160;:&#160;<a class="el" href="namespacemain.html#a598de3c53b810ce396ac1730fbd94377">main</a></li>
+<li>LIBRARIES&#160;:&#160;<a class="el" href="namespacelinuxbuildengine.html#a4d547097faf4bbcb559e7dfe09827d79">linuxbuildengine</a></li>
+<li>PLAYER_ATTACK_CD&#160;:&#160;<a class="el" href="namespaceobjects.html#a873757e85220290bea21599ff9ca39dc">objects</a></li>
+<li>PLAYER_ATTACK_DAMAGE&#160;:&#160;<a class="el" href="namespaceobjects.html#ad7078d24471f64857c97d83d539d68ca">objects</a></li>
+<li>PLAYER_HURT_CD&#160;:&#160;<a class="el" href="namespaceobjects.html#a14a671a4fbce0b0c998599c09c31cf3a">objects</a></li>
+<li>PLAYER_MOVE_SPEED&#160;:&#160;<a class="el" href="namespaceobjects.html#a75e7d0c0e50d746670ef7c8488ddbe97">objects</a></li>
+<li>SOURCE&#160;:&#160;<a class="el" href="namespacelinuxbuildengine.html#ab6c0fa6eddfe3257edd752c619dd5aff">linuxbuildengine</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
 </body>
 </html>

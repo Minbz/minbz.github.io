@@ -10,6 +10,10 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -50,6 +54,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('functions.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -75,213 +95,216 @@ $(function() {
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index__5F" name="index__5F"></a>- _ -</h3><ul>
-<li>__init__()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a9cfe9b7ce77227c8ac044cab9eb47ec3">objects.Combatant</a>, <a class="el" href="d3/db8/classobjects_1_1_object.html#a8ec6d18a843bf1572c8efb25890dd60d">objects.Object</a>, <a class="el" href="d7/d27/classobjects_1_1_player.html#affd453385f593b1f5d392491b7c74422">objects.Player</a></li>
+<li>__init__()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a9cfe9b7ce77227c8ac044cab9eb47ec3">objects.Combatant</a>, <a class="el" href="classobjects_1_1_object.html#a8ec6d18a843bf1572c8efb25890dd60d">objects.Object</a>, <a class="el" href="classobjects_1_1_player.html#affd453385f593b1f5d392491b7c74422">objects.Player</a></li>
 </ul>
 
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
-<li>add_collision2D()&#160;:&#160;<a class="el" href="d3/db8/classobjects_1_1_object.html#a154cb2057c88755daa5407e02326b14a">objects.Object</a></li>
-<li>AddAnimation()&#160;:&#160;<a class="el" href="dd/d4e/struct_animation_component.html#aa8bf3770242c11893c0491e11083a2a0">AnimationComponent</a>, <a class="el" href="d2/d15/struct_game_entity.html#a43522825764e8dec3a11f0648fed08af">GameEntity</a></li>
-<li>AddCollision2D()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a3df0c2fd727b8c72d7e98eef8addf17a">GameEntity</a></li>
-<li>AddComponent()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#af9434f110d4102c3b2cf69b615698138">GameEntity</a></li>
-<li>AddTexture()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a99271af35b1adf63ac253ba2b5fff798">GameEntity</a></li>
-<li>AddTileType()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#aa99a0eb17e1d81eb7162bf771057a2e8">TileMap</a></li>
-<li>AddTransform()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a607ae15c00401326bc13ff86b0530d51">GameEntity</a></li>
-<li>alive&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#ab10dea9f5ae7b72d9a5319031bd5d605">objects.Combatant</a>, <a class="el" href="df/df3/classobjects_1_1_enemy.html#aebc5ada27f957122e15639beb4230c16">objects.Enemy</a>, <a class="el" href="d7/d27/classobjects_1_1_player.html#a874c02fa5955661132391dfc6449baab">objects.Player</a></li>
-<li>AnimationComponent()&#160;:&#160;<a class="el" href="dd/d4e/struct_animation_component.html#a9a05944808632b48959cfa6c3365be3c">AnimationComponent</a></li>
-<li>attack()&#160;:&#160;<a class="el" href="d7/d27/classobjects_1_1_player.html#adabe05b867459bcd05548059ac2c1abb">objects.Player</a></li>
+<li>add_collision2D()&#160;:&#160;<a class="el" href="classobjects_1_1_object.html#a154cb2057c88755daa5407e02326b14a">objects.Object</a></li>
+<li>AddAnimation()&#160;:&#160;<a class="el" href="struct_animation_component.html#aa8bf3770242c11893c0491e11083a2a0">AnimationComponent</a>, <a class="el" href="struct_game_entity.html#a43522825764e8dec3a11f0648fed08af">GameEntity</a></li>
+<li>AddCollision2D()&#160;:&#160;<a class="el" href="struct_game_entity.html#a3df0c2fd727b8c72d7e98eef8addf17a">GameEntity</a></li>
+<li>AddComponent()&#160;:&#160;<a class="el" href="struct_game_entity.html#af9434f110d4102c3b2cf69b615698138">GameEntity</a></li>
+<li>AddTexture()&#160;:&#160;<a class="el" href="struct_game_entity.html#a99271af35b1adf63ac253ba2b5fff798">GameEntity</a></li>
+<li>AddTileType()&#160;:&#160;<a class="el" href="struct_tile_map.html#aa99a0eb17e1d81eb7162bf771057a2e8">TileMap</a></li>
+<li>AddTransform()&#160;:&#160;<a class="el" href="struct_game_entity.html#a607ae15c00401326bc13ff86b0530d51">GameEntity</a></li>
+<li>alive&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#ab10dea9f5ae7b72d9a5319031bd5d605">objects.Combatant</a>, <a class="el" href="classobjects_1_1_enemy.html#aebc5ada27f957122e15639beb4230c16">objects.Enemy</a>, <a class="el" href="classobjects_1_1_player.html#a874c02fa5955661132391dfc6449baab">objects.Player</a></li>
+<li>AnimationComponent()&#160;:&#160;<a class="el" href="struct_animation_component.html#a9a05944808632b48959cfa6c3365be3c">AnimationComponent</a></li>
+<li>attack()&#160;:&#160;<a class="el" href="classobjects_1_1_player.html#adabe05b867459bcd05548059ac2c1abb">objects.Player</a></li>
 </ul>
 
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>cd&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#af92054b169b2e1f6ad7c212360f3a076">objects.Combatant</a>, <a class="el" href="df/df3/classobjects_1_1_enemy.html#a0fc1f939db7a9fd314c8611945b5542d">objects.Enemy</a>, <a class="el" href="d7/d27/classobjects_1_1_player.html#ae08378c89ddca050c63ba420bef38eeb">objects.Player</a></li>
-<li>check_collision_with()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a2297fe83d86aeb607b31b7170b764409">objects.Combatant</a></li>
-<li>clear()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#a7317f5c79d48133159268247f3bbedbd">SDLGraphicsProgram</a></li>
-<li>collidable&#160;:&#160;<a class="el" href="d7/d65/struct_tile_record.html#ab19551e0be119803c4c84c9a71c09a47">TileRecord</a></li>
-<li>Collision2DComponent()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#ade213512e52db3894fd5fc67e376386c">Collision2DComponent</a></li>
-<li>Component()&#160;:&#160;<a class="el" href="d0/d9d/struct_component.html#a8775db6d1a2c1afc2e77cd3c8f39da6f">Component</a></li>
-<li>CreateAnimation()&#160;:&#160;<a class="el" href="d9/d4c/struct_single_animation.html#ad2ae4ffc240b569baa007bc36ff49e1a">SingleAnimation</a></li>
-<li>CreateTextureComponent()&#160;:&#160;<a class="el" href="d5/dac/struct_texture_component.html#acff58e692e75fa96a30b04cad1c22c20">TextureComponent</a></li>
-<li>curr_health&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a8acf810049adb5ad0d9f4637885d59be">objects.Combatant</a></li>
+<li>cd&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#af92054b169b2e1f6ad7c212360f3a076">objects.Combatant</a>, <a class="el" href="classobjects_1_1_enemy.html#a0fc1f939db7a9fd314c8611945b5542d">objects.Enemy</a>, <a class="el" href="classobjects_1_1_player.html#ae08378c89ddca050c63ba420bef38eeb">objects.Player</a></li>
+<li>check_collision_with()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a2297fe83d86aeb607b31b7170b764409">objects.Combatant</a></li>
+<li>clear()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#a7317f5c79d48133159268247f3bbedbd">SDLGraphicsProgram</a></li>
+<li>collidable&#160;:&#160;<a class="el" href="struct_tile_record.html#ab19551e0be119803c4c84c9a71c09a47">TileRecord</a></li>
+<li>Collision2DComponent()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#ade213512e52db3894fd5fc67e376386c">Collision2DComponent</a></li>
+<li>Component()&#160;:&#160;<a class="el" href="struct_component.html#a8775db6d1a2c1afc2e77cd3c8f39da6f">Component</a></li>
+<li>CreateAnimation()&#160;:&#160;<a class="el" href="struct_single_animation.html#ad2ae4ffc240b569baa007bc36ff49e1a">SingleAnimation</a></li>
+<li>CreateTextureComponent()&#160;:&#160;<a class="el" href="struct_texture_component.html#acff58e692e75fa96a30b04cad1c22c20">TextureComponent</a></li>
+<li>curr_health&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a8acf810049adb5ad0d9f4637885d59be">objects.Combatant</a></li>
 </ul>
 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
-<li>delay()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#a299c62853b3f28fc3930880fc4c128ba">SDLGraphicsProgram</a></li>
-<li>draw_health_bar()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a82d7c02a64deab91b63f1399ccf0065e">objects.Combatant</a></li>
-<li>drawRectangle()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#a1eb0e43a577156cdde5d4dae88f9c6f5">SDLGraphicsProgram</a></li>
+<li>delay()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#a299c62853b3f28fc3930880fc4c128ba">SDLGraphicsProgram</a></li>
+<li>draw_health_bar()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a82d7c02a64deab91b63f1399ccf0065e">objects.Combatant</a></li>
+<li>drawRectangle()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#a1eb0e43a577156cdde5d4dae88f9c6f5">SDLGraphicsProgram</a></li>
 </ul>
 
 
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
-<li>EraseTileAt()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#a2cfe37a7467c48735938beee4c15a194">TileMap</a></li>
+<li>EraseTileAt()&#160;:&#160;<a class="el" href="struct_tile_map.html#a2cfe37a7467c48735938beee4c15a194">TileMap</a></li>
 </ul>
 
 
 <h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
-<li>filepath&#160;:&#160;<a class="el" href="d7/d65/struct_tile_record.html#af5d6ae4871f2a3e746d2575aa1c89987">TileRecord</a></li>
-<li>fit_transform_to_animation()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a70b762593c9886415beb12e71db9525b">objects.Combatant</a></li>
-<li>flip()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#a1b2040042b2fc4bda09f365d7885e9a3">SDLGraphicsProgram</a></li>
+<li>filepath&#160;:&#160;<a class="el" href="struct_tile_record.html#af5d6ae4871f2a3e746d2575aa1c89987">TileRecord</a></li>
+<li>fit_transform_to_animation()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a70b762593c9886415beb12e71db9525b">objects.Combatant</a></li>
+<li>flip()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#a1b2040042b2fc4bda09f365d7885e9a3">SDLGraphicsProgram</a></li>
 </ul>
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>game_entity&#160;:&#160;<a class="el" href="d3/db8/classobjects_1_1_object.html#ae55c3247f284bb699b050f892eee920c">objects.Object</a></li>
-<li>GameEntity()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a43e4841110c2de7e207d25cd31573616">GameEntity</a></li>
-<li>get_alive()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a620508f6ba90f403d40aae9678b76859">objects.Combatant</a></li>
-<li>get_curr_health()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a49044ce9651cdfc73fd0f34d964d5c39">objects.Combatant</a></li>
-<li>get_name()&#160;:&#160;<a class="el" href="d3/db8/classobjects_1_1_object.html#a5b148f2d5d39ffcbd011db3db57a659c">objects.Object</a></li>
-<li>GetAnimation()&#160;:&#160;<a class="el" href="dd/d4e/struct_animation_component.html#a7b30951fd80ecefa2ab8dd649056924f">AnimationComponent</a></li>
-<li>GetAnimations()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#adb69646004a33810e8e7a0010d61d569">GameEntity</a></li>
-<li>GetCollision2D()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a1df21d2f2bd0ae5339d463081888142a">GameEntity</a></li>
-<li>GetComponent()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a909d6f1466f185980ac418a76bc5f133">GameEntity</a></li>
-<li>getDeltaTime()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#a3b8b9129135fb275f8178652fd321f03">SDLGraphicsProgram</a></li>
-<li>GetDuration()&#160;:&#160;<a class="el" href="d9/d4c/struct_single_animation.html#af763f67604fa9fdfa4e297393408b2b3">SingleAnimation</a></li>
-<li>GetFlip()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#aca82a6165db2229f3ea986313a35d82c">GameEntity</a></li>
-<li>GetGameEntity()&#160;:&#160;<a class="el" href="d0/d9d/struct_component.html#ad1000f79fe140ee4cc90d0b23cd6c035">Component</a></li>
-<li>GetH()&#160;:&#160;<a class="el" href="d9/d4c/struct_single_animation.html#ae6cf85fbd25c91a5a7c90a2bf7cee72d">SingleAnimation</a></li>
-<li>GetHeight()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#a81dc4dc02365a1c8d0182c57e20755d8">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#a0389390fe9fe50890970cc1c79b4598e">TransformComponent</a></li>
-<li>GetMapHeight()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#a40fbefc9f43b682b4298abf33ea973ce">TileMap</a></li>
-<li>GetMapWidth()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#a065aa65276780ea538b29b4033e12eb0">TileMap</a></li>
-<li>GetMouseClickPosition()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a3641d1cf5c9a1d46dadf391c4de8ee63">Input</a></li>
-<li>GetMousePosition()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#ae60169a58b79c86af3cdf17609139fea">Input</a></li>
-<li>GetName()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a5d5253e4918499a84ef1edf1214c9743">GameEntity</a></li>
-<li>GetRect()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#adaec70e9418179746fc0cc7172ebd24e">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#aa12a1acbbbe8db75af3e367af5e1cdfd">TransformComponent</a></li>
-<li>getScreenHeight()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#ab8cd81e0d1e18b304751d0e3f760acd7">SDLGraphicsProgram</a></li>
-<li>getScreenWidth()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#a2e3458eadc6050163a597a561d5047ab">SDLGraphicsProgram</a></li>
-<li>getSDLRenderer()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#a93f03781d3b48dcd8c9fc045735e4492">SDLGraphicsProgram</a></li>
-<li>getSDLWindow()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#a42e9554ec5b497551530bd5a8ca9585f">SDLGraphicsProgram</a></li>
-<li>GetState()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#ad26b59b4a46bbb3cf1da6fc0ec9c57c9">GameEntity</a></li>
-<li>GetTexture()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#aa5a90a2f3cc78f259c645e799e2d9444">GameEntity</a></li>
-<li>GetTileHeight()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#a316e1f03b454423f94dbfeffca987bd5">TileMap</a></li>
-<li>GetTileWidth()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#a7756bcef807dd00e5343852e73ffd8cb">TileMap</a></li>
-<li>GetTransform()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a6eb050e651a68dd7fe17ad85f0066397">GameEntity</a></li>
-<li>GetType()&#160;:&#160;<a class="el" href="dd/d4e/struct_animation_component.html#a129e0268b32d7af09a542093b3e49a3e">AnimationComponent</a>, <a class="el" href="d9/d03/struct_collision2_d_component.html#a8fbd37bdb8315708272d3589d6d74a41">Collision2DComponent</a>, <a class="el" href="d0/d9d/struct_component.html#a2e87d60cd7150786e51bfcda7129ed90">Component</a>, <a class="el" href="d5/dac/struct_texture_component.html#a130152edf8eb87d06f4673b129d0cdd7">TextureComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#a4d30c255d54af02fc53774412b488014">TransformComponent</a></li>
-<li>GetW()&#160;:&#160;<a class="el" href="d9/d4c/struct_single_animation.html#a8c93df85a27bdb4d217b445eecc49584">SingleAnimation</a></li>
-<li>GetWidth()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#abe68853a80e33e5d99964953a6e01a6a">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#ad5aab95207a60e048821155615d3117c">TransformComponent</a></li>
-<li>GetX()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#a1bde089d836a0a59fab2831f75423966">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#a7260ce3bc9ef172d4a57a482c2b209ad">TransformComponent</a></li>
-<li>GetY()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#aaee3ecf76e1b5d7f7646c6d29233411f">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#ae02c8d6e718fdcc01065b228bbcdb10d">TransformComponent</a></li>
+<li>game_entity&#160;:&#160;<a class="el" href="classobjects_1_1_object.html#ae55c3247f284bb699b050f892eee920c">objects.Object</a></li>
+<li>GameEntity()&#160;:&#160;<a class="el" href="struct_game_entity.html#a43e4841110c2de7e207d25cd31573616">GameEntity</a></li>
+<li>get_alive()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a620508f6ba90f403d40aae9678b76859">objects.Combatant</a></li>
+<li>get_curr_health()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a49044ce9651cdfc73fd0f34d964d5c39">objects.Combatant</a></li>
+<li>get_name()&#160;:&#160;<a class="el" href="classobjects_1_1_object.html#a5b148f2d5d39ffcbd011db3db57a659c">objects.Object</a></li>
+<li>GetAnimation()&#160;:&#160;<a class="el" href="struct_animation_component.html#a7b30951fd80ecefa2ab8dd649056924f">AnimationComponent</a></li>
+<li>GetAnimations()&#160;:&#160;<a class="el" href="struct_game_entity.html#adb69646004a33810e8e7a0010d61d569">GameEntity</a></li>
+<li>GetCollision2D()&#160;:&#160;<a class="el" href="struct_game_entity.html#a1df21d2f2bd0ae5339d463081888142a">GameEntity</a></li>
+<li>GetComponent()&#160;:&#160;<a class="el" href="struct_game_entity.html#a909d6f1466f185980ac418a76bc5f133">GameEntity</a></li>
+<li>getDeltaTime()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#a3b8b9129135fb275f8178652fd321f03">SDLGraphicsProgram</a></li>
+<li>GetDuration()&#160;:&#160;<a class="el" href="struct_single_animation.html#af763f67604fa9fdfa4e297393408b2b3">SingleAnimation</a></li>
+<li>GetFlip()&#160;:&#160;<a class="el" href="struct_game_entity.html#aca82a6165db2229f3ea986313a35d82c">GameEntity</a></li>
+<li>GetGameEntity()&#160;:&#160;<a class="el" href="struct_component.html#ad1000f79fe140ee4cc90d0b23cd6c035">Component</a></li>
+<li>GetH()&#160;:&#160;<a class="el" href="struct_single_animation.html#ae6cf85fbd25c91a5a7c90a2bf7cee72d">SingleAnimation</a></li>
+<li>GetHeight()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#a81dc4dc02365a1c8d0182c57e20755d8">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#a0389390fe9fe50890970cc1c79b4598e">TransformComponent</a></li>
+<li>GetMapHeight()&#160;:&#160;<a class="el" href="struct_tile_map.html#a40fbefc9f43b682b4298abf33ea973ce">TileMap</a></li>
+<li>GetMapWidth()&#160;:&#160;<a class="el" href="struct_tile_map.html#a065aa65276780ea538b29b4033e12eb0">TileMap</a></li>
+<li>GetMouseClickPosition()&#160;:&#160;<a class="el" href="struct_input.html#a3641d1cf5c9a1d46dadf391c4de8ee63">Input</a></li>
+<li>GetMousePosition()&#160;:&#160;<a class="el" href="struct_input.html#ae60169a58b79c86af3cdf17609139fea">Input</a></li>
+<li>GetName()&#160;:&#160;<a class="el" href="struct_game_entity.html#a5d5253e4918499a84ef1edf1214c9743">GameEntity</a></li>
+<li>GetRect()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#adaec70e9418179746fc0cc7172ebd24e">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#aa12a1acbbbe8db75af3e367af5e1cdfd">TransformComponent</a></li>
+<li>getScreenHeight()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#ab8cd81e0d1e18b304751d0e3f760acd7">SDLGraphicsProgram</a></li>
+<li>getScreenWidth()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#a2e3458eadc6050163a597a561d5047ab">SDLGraphicsProgram</a></li>
+<li>getSDLRenderer()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#a93f03781d3b48dcd8c9fc045735e4492">SDLGraphicsProgram</a></li>
+<li>getSDLWindow()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#a42e9554ec5b497551530bd5a8ca9585f">SDLGraphicsProgram</a></li>
+<li>GetState()&#160;:&#160;<a class="el" href="struct_game_entity.html#ad26b59b4a46bbb3cf1da6fc0ec9c57c9">GameEntity</a></li>
+<li>GetTexture()&#160;:&#160;<a class="el" href="struct_game_entity.html#aa5a90a2f3cc78f259c645e799e2d9444">GameEntity</a></li>
+<li>GetTileHeight()&#160;:&#160;<a class="el" href="struct_tile_map.html#a316e1f03b454423f94dbfeffca987bd5">TileMap</a></li>
+<li>GetTileWidth()&#160;:&#160;<a class="el" href="struct_tile_map.html#a7756bcef807dd00e5343852e73ffd8cb">TileMap</a></li>
+<li>GetTransform()&#160;:&#160;<a class="el" href="struct_game_entity.html#a6eb050e651a68dd7fe17ad85f0066397">GameEntity</a></li>
+<li>GetType()&#160;:&#160;<a class="el" href="struct_animation_component.html#a129e0268b32d7af09a542093b3e49a3e">AnimationComponent</a>, <a class="el" href="struct_collision2_d_component.html#a8fbd37bdb8315708272d3589d6d74a41">Collision2DComponent</a>, <a class="el" href="struct_component.html#a2e87d60cd7150786e51bfcda7129ed90">Component</a>, <a class="el" href="struct_texture_component.html#a130152edf8eb87d06f4673b129d0cdd7">TextureComponent</a>, <a class="el" href="struct_transform_component.html#a4d30c255d54af02fc53774412b488014">TransformComponent</a></li>
+<li>GetW()&#160;:&#160;<a class="el" href="struct_single_animation.html#a8c93df85a27bdb4d217b445eecc49584">SingleAnimation</a></li>
+<li>GetWidth()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#abe68853a80e33e5d99964953a6e01a6a">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#ad5aab95207a60e048821155615d3117c">TransformComponent</a></li>
+<li>GetX()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#a1bde089d836a0a59fab2831f75423966">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#a7260ce3bc9ef172d4a57a482c2b209ad">TransformComponent</a></li>
+<li>GetY()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#aaee3ecf76e1b5d7f7646c6d29233411f">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#ae02c8d6e718fdcc01065b228bbcdb10d">TransformComponent</a></li>
 </ul>
 
 
 <h3><a id="index_h" name="index_h"></a>- h -</h3><ul>
-<li>HasCollisionWith()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#a44cbc11ad13925fff03299c215337ed1">TileMap</a></li>
-<li>hurt()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#ae53917a486778e14cb519995c2fb54bd">objects.Combatant</a>, <a class="el" href="df/df3/classobjects_1_1_enemy.html#ac7cb195a1a2a054f5f00c5cbc1c42774">objects.Enemy</a>, <a class="el" href="d7/d27/classobjects_1_1_player.html#a0b6a556dfcddf99d8b3af5b53dfded1f">objects.Player</a></li>
+<li>HasCollisionWith()&#160;:&#160;<a class="el" href="struct_tile_map.html#a44cbc11ad13925fff03299c215337ed1">TileMap</a></li>
+<li>hurt()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#ae53917a486778e14cb519995c2fb54bd">objects.Combatant</a>, <a class="el" href="classobjects_1_1_enemy.html#ac7cb195a1a2a054f5f00c5cbc1c42774">objects.Enemy</a>, <a class="el" href="classobjects_1_1_player.html#a0b6a556dfcddf99d8b3af5b53dfded1f">objects.Player</a></li>
 </ul>
 
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>initGL()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#a6cc65adc2dde4f2346839685c4e43ea9">SDLGraphicsProgram</a></li>
-<li>Input()&#160;:&#160;<a class="el" href="dd/d4e/struct_animation_component.html#a3644f430c7c340332437b538b438b7ed">AnimationComponent</a>, <a class="el" href="d9/d03/struct_collision2_d_component.html#ad4ac4768513c4d128a1bfcf8141fcd9e">Collision2DComponent</a>, <a class="el" href="d0/d9d/struct_component.html#a85d6bd954d08b01cfad8e8357f98d011">Component</a>, <a class="el" href="d2/dba/struct_input.html#abae3f379d3f157cf42dc857309832dba">Input</a>, <a class="el" href="d5/dac/struct_texture_component.html#a7c479b3de64f4cb205a02b8e4edd44b2">TextureComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#a031ba1c6f597c25d677fb33793479d53">TransformComponent</a></li>
-<li>Instance()&#160;:&#160;<a class="el" href="da/d14/struct_resource_manager.html#a48cd1c56c64af260a6ddb5fbd4daae54">ResourceManager</a></li>
-<li>is1KeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a9d0fa2b62a3a516f0dc20dea37664a09">Input</a></li>
-<li>is2KeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a77f4c4a40633a3c0ed5123419a32360e">Input</a></li>
-<li>is3KeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a9a219443923f4afacc9fe4467fd9eb9c">Input</a></li>
-<li>is4KeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a4d1134f7e446028b252659a4a43b1a4f">Input</a></li>
-<li>is5KeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#abe8457ea2d8ed57d64f0d25c93b2432c">Input</a></li>
-<li>isCollidable()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a3539db63dbbced16de393e5617218ad6">GameEntity</a></li>
-<li>isCollidingWith()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a25d6a8b2c40c733c70603717ae0b3f4a">GameEntity</a></li>
-<li>isDownKeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#ad87873dce7d91c9dcb95c4bb55ddcbb7">Input</a></li>
-<li>isEKeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a650a36b0ccc284b4df6fcaf66a0ffcc0">Input</a></li>
-<li>isESCKeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#ade3fc329a969eab17f37409dc65f75da">Input</a></li>
-<li>isLeftKeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a91eecfc7e6e386f2e07a3498165f9330">Input</a></li>
-<li>isQuitClicked()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a52020ff7521e944f0fd00f6537e9206a">Input</a></li>
-<li>isRightKeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a5699be4329cd3a3021d3510e694b993c">Input</a></li>
-<li>isSKeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a33eeb6d9aba677ceac34773d3b31d43c">Input</a></li>
-<li>isUpKeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#ab91c3004f1a9a640d52d60ee92f4a97c">Input</a></li>
-<li>isXKeyDown()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#a4a6f08fdf564ea5ccc13a49696991ee5">Input</a></li>
+<li>initGL()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#a6cc65adc2dde4f2346839685c4e43ea9">SDLGraphicsProgram</a></li>
+<li>Input()&#160;:&#160;<a class="el" href="struct_animation_component.html#a3644f430c7c340332437b538b438b7ed">AnimationComponent</a>, <a class="el" href="struct_collision2_d_component.html#ad4ac4768513c4d128a1bfcf8141fcd9e">Collision2DComponent</a>, <a class="el" href="struct_component.html#a85d6bd954d08b01cfad8e8357f98d011">Component</a>, <a class="el" href="struct_input.html#abae3f379d3f157cf42dc857309832dba">Input</a>, <a class="el" href="struct_texture_component.html#a7c479b3de64f4cb205a02b8e4edd44b2">TextureComponent</a>, <a class="el" href="struct_transform_component.html#a031ba1c6f597c25d677fb33793479d53">TransformComponent</a></li>
+<li>Instance()&#160;:&#160;<a class="el" href="struct_resource_manager.html#a48cd1c56c64af260a6ddb5fbd4daae54">ResourceManager</a></li>
+<li>is1KeyDown()&#160;:&#160;<a class="el" href="struct_input.html#a9d0fa2b62a3a516f0dc20dea37664a09">Input</a></li>
+<li>is2KeyDown()&#160;:&#160;<a class="el" href="struct_input.html#a77f4c4a40633a3c0ed5123419a32360e">Input</a></li>
+<li>is3KeyDown()&#160;:&#160;<a class="el" href="struct_input.html#a9a219443923f4afacc9fe4467fd9eb9c">Input</a></li>
+<li>is4KeyDown()&#160;:&#160;<a class="el" href="struct_input.html#a4d1134f7e446028b252659a4a43b1a4f">Input</a></li>
+<li>is5KeyDown()&#160;:&#160;<a class="el" href="struct_input.html#abe8457ea2d8ed57d64f0d25c93b2432c">Input</a></li>
+<li>isCollidable()&#160;:&#160;<a class="el" href="struct_game_entity.html#a3539db63dbbced16de393e5617218ad6">GameEntity</a></li>
+<li>isCollidingWith()&#160;:&#160;<a class="el" href="struct_game_entity.html#a25d6a8b2c40c733c70603717ae0b3f4a">GameEntity</a></li>
+<li>isDownKeyDown()&#160;:&#160;<a class="el" href="struct_input.html#ad87873dce7d91c9dcb95c4bb55ddcbb7">Input</a></li>
+<li>isEKeyDown()&#160;:&#160;<a class="el" href="struct_input.html#a650a36b0ccc284b4df6fcaf66a0ffcc0">Input</a></li>
+<li>isESCKeyDown()&#160;:&#160;<a class="el" href="struct_input.html#ade3fc329a969eab17f37409dc65f75da">Input</a></li>
+<li>isLeftKeyDown()&#160;:&#160;<a class="el" href="struct_input.html#a91eecfc7e6e386f2e07a3498165f9330">Input</a></li>
+<li>isQuitClicked()&#160;:&#160;<a class="el" href="struct_input.html#a52020ff7521e944f0fd00f6537e9206a">Input</a></li>
+<li>isRightKeyDown()&#160;:&#160;<a class="el" href="struct_input.html#a5699be4329cd3a3021d3510e694b993c">Input</a></li>
+<li>isSKeyDown()&#160;:&#160;<a class="el" href="struct_input.html#a33eeb6d9aba677ceac34773d3b31d43c">Input</a></li>
+<li>isUpKeyDown()&#160;:&#160;<a class="el" href="struct_input.html#ab91c3004f1a9a640d52d60ee92f4a97c">Input</a></li>
+<li>isXKeyDown()&#160;:&#160;<a class="el" href="struct_input.html#a4a6f08fdf564ea5ccc13a49696991ee5">Input</a></li>
 </ul>
 
 
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
-<li>LoadTexture()&#160;:&#160;<a class="el" href="da/d14/struct_resource_manager.html#afc8dc26b9daeea53f9d062391d92970a">ResourceManager</a></li>
-<li>LoadToGame()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#a88c350980afb0550174cd46caa902410">TileMap</a></li>
-<li>loop()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#afdca0d5835b36a1b18d7eac69056c6ff">SDLGraphicsProgram</a></li>
+<li>LoadTexture()&#160;:&#160;<a class="el" href="struct_resource_manager.html#afc8dc26b9daeea53f9d062391d92970a">ResourceManager</a></li>
+<li>LoadToGame()&#160;:&#160;<a class="el" href="struct_tile_map.html#a88c350980afb0550174cd46caa902410">TileMap</a></li>
+<li>loop()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#afdca0d5835b36a1b18d7eac69056c6ff">SDLGraphicsProgram</a></li>
 </ul>
 
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>max_health&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a685ec2d73a4bfc8a47d879c6e99be0fe">objects.Combatant</a></li>
-<li>MoveX()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a69da34d4691b45032bd0ad1fae897eb3">GameEntity</a></li>
-<li>MoveY()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a42fb88c99aaae0f21c3433ce77fdf243">GameEntity</a></li>
+<li>max_health&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a685ec2d73a4bfc8a47d879c6e99be0fe">objects.Combatant</a></li>
+<li>MoveX()&#160;:&#160;<a class="el" href="struct_game_entity.html#a69da34d4691b45032bd0ad1fae897eb3">GameEntity</a></li>
+<li>MoveY()&#160;:&#160;<a class="el" href="struct_game_entity.html#a42fb88c99aaae0f21c3433ce77fdf243">GameEntity</a></li>
 </ul>
 
 
 <h3><a id="index_o" name="index_o"></a>- o -</h3><ul>
-<li>operator()()&#160;:&#160;<a class="el" href="df/d75/struct_texture_functor_deleter.html#a24fe0ece0de41bcb600f5776f72521fa">TextureFunctorDeleter</a></li>
+<li>operator()()&#160;:&#160;<a class="el" href="struct_texture_functor_deleter.html#a24fe0ece0de41bcb600f5776f72521fa">TextureFunctorDeleter</a></li>
 </ul>
 
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>PlaceTileAt()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#a6105c5b7e55d4cc14f0afa8dfeef14e5">TileMap</a></li>
+<li>PlaceTileAt()&#160;:&#160;<a class="el" href="struct_tile_map.html#a6105c5b7e55d4cc14f0afa8dfeef14e5">TileMap</a></li>
 </ul>
 
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>Render()&#160;:&#160;<a class="el" href="dd/d4e/struct_animation_component.html#a9275384cc6f7bf2084b1b8b6542efdd0">AnimationComponent</a>, <a class="el" href="d9/d03/struct_collision2_d_component.html#a1c5ae84271e0904112be7b33dbb2a72b">Collision2DComponent</a>, <a class="el" href="d0/d9d/struct_component.html#a125afdcd756ed53a23d40ac56d640031">Component</a>, <a class="el" href="d2/d15/struct_game_entity.html#a4e65db9e4d68e7a0d56ce29bc0143d81">GameEntity</a></li>
-<li>render()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a82ccbdaac5509f406c5ae1af3ef0a1b9">objects.Combatant</a>, <a class="el" href="df/df3/classobjects_1_1_enemy.html#a8207d4a728143251ec9cab678fc9be12">objects.Enemy</a>, <a class="el" href="d3/db8/classobjects_1_1_object.html#ad934fc92ca94eb38ae3a4820b469dd5f">objects.Object</a></li>
-<li>Render()&#160;:&#160;<a class="el" href="d5/dac/struct_texture_component.html#a27f0711a707cc6fdb74808c97254a24a">TextureComponent</a>, <a class="el" href="d1/d3e/struct_tile_map.html#aa6d79b9ae7a46d088d160e7727694812">TileMap</a>, <a class="el" href="da/dd7/struct_transform_component.html#a2f5c47243b16b4a3e12b463c6afe0076">TransformComponent</a></li>
-<li>RenderFrame()&#160;:&#160;<a class="el" href="d9/d4c/struct_single_animation.html#a7a087e6d763a2b8db2b82f3b23e6ff59">SingleAnimation</a></li>
-<li>ResetFrame()&#160;:&#160;<a class="el" href="d9/d4c/struct_single_animation.html#a51d1550fe01bd59600ea3c7b00f6cdf8">SingleAnimation</a></li>
+<li>Render()&#160;:&#160;<a class="el" href="struct_animation_component.html#a9275384cc6f7bf2084b1b8b6542efdd0">AnimationComponent</a>, <a class="el" href="struct_collision2_d_component.html#a1c5ae84271e0904112be7b33dbb2a72b">Collision2DComponent</a>, <a class="el" href="struct_component.html#a125afdcd756ed53a23d40ac56d640031">Component</a>, <a class="el" href="struct_game_entity.html#a4e65db9e4d68e7a0d56ce29bc0143d81">GameEntity</a></li>
+<li>render()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a82ccbdaac5509f406c5ae1af3ef0a1b9">objects.Combatant</a>, <a class="el" href="classobjects_1_1_enemy.html#a8207d4a728143251ec9cab678fc9be12">objects.Enemy</a>, <a class="el" href="classobjects_1_1_object.html#ad934fc92ca94eb38ae3a4820b469dd5f">objects.Object</a></li>
+<li>Render()&#160;:&#160;<a class="el" href="struct_texture_component.html#a27f0711a707cc6fdb74808c97254a24a">TextureComponent</a>, <a class="el" href="struct_tile_map.html#aa6d79b9ae7a46d088d160e7727694812">TileMap</a>, <a class="el" href="struct_transform_component.html#a2f5c47243b16b4a3e12b463c6afe0076">TransformComponent</a></li>
+<li>RenderFrame()&#160;:&#160;<a class="el" href="struct_single_animation.html#a7a087e6d763a2b8db2b82f3b23e6ff59">SingleAnimation</a></li>
+<li>ResetFrame()&#160;:&#160;<a class="el" href="struct_single_animation.html#a51d1550fe01bd59600ea3c7b00f6cdf8">SingleAnimation</a></li>
 </ul>
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>SDLGraphicsProgram()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#aaa8529250defd627821192e550a32188">SDLGraphicsProgram</a></li>
-<li>set_curr_health()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a8a94456432d82fd932b473cb435598ad">objects.Combatant</a></li>
-<li>set_enemy_no()&#160;:&#160;<a class="el" href="df/df3/classobjects_1_1_enemy.html#aff6bbf59778ebcfed50325e134e73ee7">objects.Enemy</a></li>
-<li>SetFlip()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a2117ea5e6c4ba82ea13167ff5d1c8fcc">GameEntity</a></li>
-<li>SetFrameConfig()&#160;:&#160;<a class="el" href="d9/d4c/struct_single_animation.html#a0bd311fed6492af9c6752435afc2c844">SingleAnimation</a></li>
-<li>SetGameEntity()&#160;:&#160;<a class="el" href="d0/d9d/struct_component.html#a92fc19214ae6a73ee22824d85d1a1b99">Component</a></li>
-<li>SetHeight()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#ad56476f3936639dd570848afe1f3eb6c">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#a31215e1bb6c87e7392cbc6b85a1a6767">TransformComponent</a></li>
-<li>SetName()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#aa48a3a64bc80d6e199301b9d5bac4409">GameEntity</a></li>
-<li>SetState()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a9d4b536fc46b9ea4a63539ba1ff1aad0">GameEntity</a></li>
-<li>SetWH()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#abd832fdc022f80dfee1e20070f42f941">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#a198f76af633557e85027771f60867432">TransformComponent</a></li>
-<li>SetWidth()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#abe76e11057f8b85000d19826708f53e4">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#a0119c24801e850b62e2fc1bde2c39566">TransformComponent</a></li>
-<li>SetX()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#adfd8f5fd9c0bba9265042981ea400c14">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#a8052d38b75f03094e781481212878589">TransformComponent</a></li>
-<li>SetXY()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#a24ce405b955155836317f1c027631b86">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#a1977fcd1d8cd835aea71651f18cc9ea4">TransformComponent</a></li>
-<li>SetY()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#a3a08e1d987d66f141a3cddaa991606bf">Collision2DComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#ab7df147cf1e48361aec3f96573278a09">TransformComponent</a></li>
-<li>SingleAnimation()&#160;:&#160;<a class="el" href="d9/d4c/struct_single_animation.html#a12b20ae8e5b8eb441b3de64af2859bcf">SingleAnimation</a></li>
+<li>SDLGraphicsProgram()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#aaa8529250defd627821192e550a32188">SDLGraphicsProgram</a></li>
+<li>set_curr_health()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a8a94456432d82fd932b473cb435598ad">objects.Combatant</a></li>
+<li>set_enemy_no()&#160;:&#160;<a class="el" href="classobjects_1_1_enemy.html#aff6bbf59778ebcfed50325e134e73ee7">objects.Enemy</a></li>
+<li>SetFlip()&#160;:&#160;<a class="el" href="struct_game_entity.html#a2117ea5e6c4ba82ea13167ff5d1c8fcc">GameEntity</a></li>
+<li>SetFrameConfig()&#160;:&#160;<a class="el" href="struct_single_animation.html#a0bd311fed6492af9c6752435afc2c844">SingleAnimation</a></li>
+<li>SetGameEntity()&#160;:&#160;<a class="el" href="struct_component.html#a92fc19214ae6a73ee22824d85d1a1b99">Component</a></li>
+<li>SetHeight()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#ad56476f3936639dd570848afe1f3eb6c">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#a31215e1bb6c87e7392cbc6b85a1a6767">TransformComponent</a></li>
+<li>SetName()&#160;:&#160;<a class="el" href="struct_game_entity.html#aa48a3a64bc80d6e199301b9d5bac4409">GameEntity</a></li>
+<li>SetState()&#160;:&#160;<a class="el" href="struct_game_entity.html#a9d4b536fc46b9ea4a63539ba1ff1aad0">GameEntity</a></li>
+<li>SetWH()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#abd832fdc022f80dfee1e20070f42f941">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#a198f76af633557e85027771f60867432">TransformComponent</a></li>
+<li>SetWidth()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#abe76e11057f8b85000d19826708f53e4">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#a0119c24801e850b62e2fc1bde2c39566">TransformComponent</a></li>
+<li>SetX()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#adfd8f5fd9c0bba9265042981ea400c14">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#a8052d38b75f03094e781481212878589">TransformComponent</a></li>
+<li>SetXY()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#a24ce405b955155836317f1c027631b86">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#a1977fcd1d8cd835aea71651f18cc9ea4">TransformComponent</a></li>
+<li>SetY()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#a3a08e1d987d66f141a3cddaa991606bf">Collision2DComponent</a>, <a class="el" href="struct_transform_component.html#ab7df147cf1e48361aec3f96573278a09">TransformComponent</a></li>
+<li>SingleAnimation()&#160;:&#160;<a class="el" href="struct_single_animation.html#a12b20ae8e5b8eb441b3de64af2859bcf">SingleAnimation</a></li>
 </ul>
 
 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
-<li>TextureComponent()&#160;:&#160;<a class="el" href="d5/dac/struct_texture_component.html#a407011ebf63cbf960accc30f7e8e581a">TextureComponent</a></li>
-<li>TileMap()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#a6a620e6cf4e37876c618edef250d5d6c">TileMap</a></li>
-<li>TransformComponent()&#160;:&#160;<a class="el" href="da/dd7/struct_transform_component.html#ace1cf2d7d2a7468e9cb3eb0ce382f446">TransformComponent</a></li>
+<li>TextureComponent()&#160;:&#160;<a class="el" href="struct_texture_component.html#a407011ebf63cbf960accc30f7e8e581a">TextureComponent</a></li>
+<li>TileMap()&#160;:&#160;<a class="el" href="struct_tile_map.html#a6a620e6cf4e37876c618edef250d5d6c">TileMap</a></li>
+<li>TransformComponent()&#160;:&#160;<a class="el" href="struct_transform_component.html#ace1cf2d7d2a7468e9cb3eb0ce382f446">TransformComponent</a></li>
 </ul>
 
 
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
-<li>Update()&#160;:&#160;<a class="el" href="dd/d4e/struct_animation_component.html#a2a3fec26de296e1338aa4aa09666b662">AnimationComponent</a>, <a class="el" href="d9/d03/struct_collision2_d_component.html#a4c2e6e053b5b88f42001b68e29d6da1b">Collision2DComponent</a>, <a class="el" href="d0/d9d/struct_component.html#a3c50208a8c7ea021b0ae2b9dfbaec65a">Component</a>, <a class="el" href="d2/d15/struct_game_entity.html#a3b9627b94d084cc5546e0eee0189dd1d">GameEntity</a></li>
-<li>update()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#ae79abb43a0361d521c7652e97c94cbc3">objects.Combatant</a>, <a class="el" href="df/df3/classobjects_1_1_enemy.html#a32e7e1c4b2e1364aaf572e065ef7c679">objects.Enemy</a>, <a class="el" href="d7/d27/classobjects_1_1_player.html#a280715f302071c428640539108d6cf36">objects.Player</a></li>
-<li>Update()&#160;:&#160;<a class="el" href="d5/dac/struct_texture_component.html#ac97e2ad41734e84e90daaccce835c3af">TextureComponent</a>, <a class="el" href="da/dd7/struct_transform_component.html#a7f61e8eea1e3d05a32653fa45bd10fe1">TransformComponent</a></li>
-<li>update_cd()&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a8dd7c2062ec580e37436b1db9952e0d0">objects.Combatant</a></li>
-<li>UpdateFrame()&#160;:&#160;<a class="el" href="d9/d4c/struct_single_animation.html#a06fe3283fbdc1b757919b842f9e408dd">SingleAnimation</a></li>
+<li>Update()&#160;:&#160;<a class="el" href="struct_animation_component.html#a2a3fec26de296e1338aa4aa09666b662">AnimationComponent</a>, <a class="el" href="struct_collision2_d_component.html#a4c2e6e053b5b88f42001b68e29d6da1b">Collision2DComponent</a>, <a class="el" href="struct_component.html#a3c50208a8c7ea021b0ae2b9dfbaec65a">Component</a>, <a class="el" href="struct_game_entity.html#a3b9627b94d084cc5546e0eee0189dd1d">GameEntity</a></li>
+<li>update()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#ae79abb43a0361d521c7652e97c94cbc3">objects.Combatant</a>, <a class="el" href="classobjects_1_1_enemy.html#a32e7e1c4b2e1364aaf572e065ef7c679">objects.Enemy</a>, <a class="el" href="classobjects_1_1_player.html#a280715f302071c428640539108d6cf36">objects.Player</a></li>
+<li>Update()&#160;:&#160;<a class="el" href="struct_texture_component.html#ac97e2ad41734e84e90daaccce835c3af">TextureComponent</a>, <a class="el" href="struct_transform_component.html#a7f61e8eea1e3d05a32653fa45bd10fe1">TransformComponent</a></li>
+<li>update_cd()&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a8dd7c2062ec580e37436b1db9952e0d0">objects.Combatant</a></li>
+<li>UpdateFrame()&#160;:&#160;<a class="el" href="struct_single_animation.html#a06fe3283fbdc1b757919b842f9e408dd">SingleAnimation</a></li>
 </ul>
 
 
 <h3><a id="index_x" name="index_x"></a>- x -</h3><ul>
-<li>x_direction&#160;:&#160;<a class="el" href="de/dc7/classobjects_1_1_combatant.html#a9e6a3fa40f39bd72b1617478520453ca">objects.Combatant</a>, <a class="el" href="df/df3/classobjects_1_1_enemy.html#a441e96a164b6070e713c8fb43f636952">objects.Enemy</a>, <a class="el" href="d7/d27/classobjects_1_1_player.html#a8bc41be9741a48a48cf09bbddbc5e097">objects.Player</a></li>
+<li>x_direction&#160;:&#160;<a class="el" href="classobjects_1_1_combatant.html#a9e6a3fa40f39bd72b1617478520453ca">objects.Combatant</a>, <a class="el" href="classobjects_1_1_enemy.html#a441e96a164b6070e713c8fb43f636952">objects.Enemy</a>, <a class="el" href="classobjects_1_1_player.html#a8bc41be9741a48a48cf09bbddbc5e097">objects.Player</a></li>
 </ul>
 
 
 <h3><a id="index__7E" name="index__7E"></a>- ~ -</h3><ul>
-<li>~AnimationComponent()&#160;:&#160;<a class="el" href="dd/d4e/struct_animation_component.html#ad35cdc747a5578fdea681486f063f515">AnimationComponent</a></li>
-<li>~Collision2DComponent()&#160;:&#160;<a class="el" href="d9/d03/struct_collision2_d_component.html#a98eca6374d323f65d37747fb8c01b58c">Collision2DComponent</a></li>
-<li>~Component()&#160;:&#160;<a class="el" href="d0/d9d/struct_component.html#a2e9aa4348314d981f05f67397ad2f872">Component</a></li>
-<li>~GameEntity()&#160;:&#160;<a class="el" href="d2/d15/struct_game_entity.html#a241238b29b5e440107a5b295edf24f9c">GameEntity</a></li>
-<li>~Input()&#160;:&#160;<a class="el" href="d2/dba/struct_input.html#af2db35ba67c8a8ccd23bef6a482fc291">Input</a></li>
-<li>~SDLGraphicsProgram()&#160;:&#160;<a class="el" href="dd/d7d/class_s_d_l_graphics_program.html#a2504412e7eaa011a1116447eb4d5ec00">SDLGraphicsProgram</a></li>
-<li>~SingleAnimation()&#160;:&#160;<a class="el" href="d9/d4c/struct_single_animation.html#a418e66b2e1a0ee03ed7c91f2580dd7d5">SingleAnimation</a></li>
-<li>~TextureComponent()&#160;:&#160;<a class="el" href="d5/dac/struct_texture_component.html#a2c927f1d2ce791106810b277a41f040f">TextureComponent</a></li>
-<li>~TileMap()&#160;:&#160;<a class="el" href="d1/d3e/struct_tile_map.html#a3448728e45d6a43fff3a02d4c6d72e9d">TileMap</a></li>
-<li>~TransformComponent()&#160;:&#160;<a class="el" href="da/dd7/struct_transform_component.html#a37d5d34a3695eafc8b8cbf37905e756f">TransformComponent</a></li>
+<li>~AnimationComponent()&#160;:&#160;<a class="el" href="struct_animation_component.html#ad35cdc747a5578fdea681486f063f515">AnimationComponent</a></li>
+<li>~Collision2DComponent()&#160;:&#160;<a class="el" href="struct_collision2_d_component.html#a98eca6374d323f65d37747fb8c01b58c">Collision2DComponent</a></li>
+<li>~Component()&#160;:&#160;<a class="el" href="struct_component.html#a2e9aa4348314d981f05f67397ad2f872">Component</a></li>
+<li>~GameEntity()&#160;:&#160;<a class="el" href="struct_game_entity.html#a241238b29b5e440107a5b295edf24f9c">GameEntity</a></li>
+<li>~Input()&#160;:&#160;<a class="el" href="struct_input.html#af2db35ba67c8a8ccd23bef6a482fc291">Input</a></li>
+<li>~SDLGraphicsProgram()&#160;:&#160;<a class="el" href="class_s_d_l_graphics_program.html#a2504412e7eaa011a1116447eb4d5ec00">SDLGraphicsProgram</a></li>
+<li>~SingleAnimation()&#160;:&#160;<a class="el" href="struct_single_animation.html#a418e66b2e1a0ee03ed7c91f2580dd7d5">SingleAnimation</a></li>
+<li>~TextureComponent()&#160;:&#160;<a class="el" href="struct_texture_component.html#a2c927f1d2ce791106810b277a41f040f">TextureComponent</a></li>
+<li>~TileMap()&#160;:&#160;<a class="el" href="struct_tile_map.html#a3448728e45d6a43fff3a02d4c6d72e9d">TileMap</a></li>
+<li>~TransformComponent()&#160;:&#160;<a class="el" href="struct_transform_component.html#a37d5d34a3695eafc8b8cbf37905e756f">TransformComponent</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gameentity_0',['GameEntity',['../d2/d15/struct_game_entity.html',1,'']]]
+  ['gameentity_0',['GameEntity',['../struct_game_entity.html',1,'']]]
 ];

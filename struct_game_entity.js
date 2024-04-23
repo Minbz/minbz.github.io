@@ -1,0 +1,27 @@
+var struct_game_entity =
+[
+    [ "GameEntity", "struct_game_entity.html#a43e4841110c2de7e207d25cd31573616", null ],
+    [ "~GameEntity", "struct_game_entity.html#a241238b29b5e440107a5b295edf24f9c", null ],
+    [ "AddAnimation", "struct_game_entity.html#a43522825764e8dec3a11f0648fed08af", null ],
+    [ "AddCollision2D", "struct_game_entity.html#a3df0c2fd727b8c72d7e98eef8addf17a", null ],
+    [ "AddComponent", "struct_game_entity.html#af9434f110d4102c3b2cf69b615698138", null ],
+    [ "AddTexture", "struct_game_entity.html#a99271af35b1adf63ac253ba2b5fff798", null ],
+    [ "AddTransform", "struct_game_entity.html#a607ae15c00401326bc13ff86b0530d51", null ],
+    [ "GetAnimations", "struct_game_entity.html#adb69646004a33810e8e7a0010d61d569", null ],
+    [ "GetCollision2D", "struct_game_entity.html#a1df21d2f2bd0ae5339d463081888142a", null ],
+    [ "GetComponent", "struct_game_entity.html#a909d6f1466f185980ac418a76bc5f133", null ],
+    [ "GetFlip", "struct_game_entity.html#aca82a6165db2229f3ea986313a35d82c", null ],
+    [ "GetName", "struct_game_entity.html#a5d5253e4918499a84ef1edf1214c9743", null ],
+    [ "GetState", "struct_game_entity.html#ad26b59b4a46bbb3cf1da6fc0ec9c57c9", null ],
+    [ "GetTexture", "struct_game_entity.html#aa5a90a2f3cc78f259c645e799e2d9444", null ],
+    [ "GetTransform", "struct_game_entity.html#a6eb050e651a68dd7fe17ad85f0066397", null ],
+    [ "isCollidable", "struct_game_entity.html#a3539db63dbbced16de393e5617218ad6", null ],
+    [ "isCollidingWith", "struct_game_entity.html#a25d6a8b2c40c733c70603717ae0b3f4a", null ],
+    [ "MoveX", "struct_game_entity.html#a69da34d4691b45032bd0ad1fae897eb3", null ],
+    [ "MoveY", "struct_game_entity.html#a42fb88c99aaae0f21c3433ce77fdf243", null ],
+    [ "Render", "struct_game_entity.html#a4e65db9e4d68e7a0d56ce29bc0143d81", null ],
+    [ "SetFlip", "struct_game_entity.html#a2117ea5e6c4ba82ea13167ff5d1c8fcc", null ],
+    [ "SetName", "struct_game_entity.html#aa48a3a64bc80d6e199301b9d5bac4409", null ],
+    [ "SetState", "struct_game_entity.html#a9d4b536fc46b9ea4a63539ba1ff1aad0", null ],
+    [ "Update", "struct_game_entity.html#a3b9627b94d084cc5546e0eee0189dd1d", null ]
+];

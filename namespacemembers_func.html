@@ -10,6 +10,10 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -50,6 +54,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('namespacemembers_func.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -73,31 +93,34 @@ $(function() {
 
 <div class="contents">
 <div class="textblock">Here is a list of all namespace functions with links to the namespace documentation for each function:</div><ul>
-<li>build_destination()&#160;:&#160;<a class="el" href="de/d05/namespaceobject__builders.html#a3604beec27f6072f44bb8dabe48e0213">object_builders</a></li>
-<li>build_editor_mouse_image()&#160;:&#160;<a class="el" href="de/d05/namespaceobject__builders.html#ab7e0499a8dad4a20ed2f397a484fa28c">object_builders</a></li>
-<li>build_enemies()&#160;:&#160;<a class="el" href="de/d05/namespaceobject__builders.html#a14394148952947c057f4c66ba15feb3b">object_builders</a></li>
-<li>build_enemy()&#160;:&#160;<a class="el" href="de/d05/namespaceobject__builders.html#ae4e90c2a5be72e2a677eff37d42c8266">object_builders</a></li>
-<li>build_level()&#160;:&#160;<a class="el" href="de/d05/namespaceobject__builders.html#a7178f03dbc2e9d7760d22d1bfeaad712">object_builders</a></li>
-<li>build_level_objects()&#160;:&#160;<a class="el" href="de/d05/namespaceobject__builders.html#a46eb769cbb535d1b868733d4d2474485">object_builders</a></li>
-<li>build_level_tilemap()&#160;:&#160;<a class="el" href="de/d05/namespaceobject__builders.html#a0c626b2ab47168d5ae406772645381da">object_builders</a></li>
-<li>build_player()&#160;:&#160;<a class="el" href="de/d05/namespaceobject__builders.html#a87b783345e94413dac6c91d06e7a2e88">object_builders</a></li>
-<li>build_prompt()&#160;:&#160;<a class="el" href="de/d05/namespaceobject__builders.html#a6ea8e850cb37275121c17aa1f56c5c4c">object_builders</a></li>
-<li>check_level_completion()&#160;:&#160;<a class="el" href="d1/d8a/namespacehelper.html#a85dee931e76f3bba286e98df3ce0e024">helper</a></li>
-<li>edit_level()&#160;:&#160;<a class="el" href="d1/d8a/namespacehelper.html#ad3aede5ecc211facd27a8b456866184c">helper</a></li>
-<li>find_num_for_enemy()&#160;:&#160;<a class="el" href="d1/d8a/namespacehelper.html#aac0fce59a52e34ec74553ab67ff9b16e">helper</a></li>
-<li>find_obj()&#160;:&#160;<a class="el" href="df/d4c/namespaceobjects.html#a0f7aa2ea139c1f27acb8c6b72f8d86a0">objects</a></li>
-<li>find_same_num()&#160;:&#160;<a class="el" href="d1/d8a/namespacehelper.html#ae7f51d12dcb50d6c9a508d9ce3c7c0dc">helper</a></li>
-<li>get_edit_type()&#160;:&#160;<a class="el" href="d1/d8a/namespacehelper.html#a03f85bcdc0b1497c90972281cbbe8ad1">helper</a></li>
-<li>get_level_config()&#160;:&#160;<a class="el" href="de/dfd/namespaceconfig__manager.html#ab17f744e65817c9f750c735b6284cd60">config_manager</a></li>
-<li>load_animations()&#160;:&#160;<a class="el" href="de/d05/namespaceobject__builders.html#a13d2da3949ac5c77c47dee48f17207c7">object_builders</a></li>
-<li>main()&#160;:&#160;<a class="el" href="d2/dc1/namespacemain.html#a3140e9a5b6a71ffbf498198cfc471b88">main</a></li>
-<li>read_config()&#160;:&#160;<a class="el" href="de/dfd/namespaceconfig__manager.html#a7112a91193564d5a704fd31593977dab">config_manager</a></li>
-<li>write_config()&#160;:&#160;<a class="el" href="de/dfd/namespaceconfig__manager.html#a3a935204c438df97100c15a8dfa49eef">config_manager</a></li>
+<li>build_destination()&#160;:&#160;<a class="el" href="namespaceobject__builders.html#a3604beec27f6072f44bb8dabe48e0213">object_builders</a></li>
+<li>build_editor_mouse_image()&#160;:&#160;<a class="el" href="namespaceobject__builders.html#ab7e0499a8dad4a20ed2f397a484fa28c">object_builders</a></li>
+<li>build_enemies()&#160;:&#160;<a class="el" href="namespaceobject__builders.html#a14394148952947c057f4c66ba15feb3b">object_builders</a></li>
+<li>build_enemy()&#160;:&#160;<a class="el" href="namespaceobject__builders.html#ae4e90c2a5be72e2a677eff37d42c8266">object_builders</a></li>
+<li>build_level()&#160;:&#160;<a class="el" href="namespaceobject__builders.html#a7178f03dbc2e9d7760d22d1bfeaad712">object_builders</a></li>
+<li>build_level_objects()&#160;:&#160;<a class="el" href="namespaceobject__builders.html#a46eb769cbb535d1b868733d4d2474485">object_builders</a></li>
+<li>build_level_tilemap()&#160;:&#160;<a class="el" href="namespaceobject__builders.html#a0c626b2ab47168d5ae406772645381da">object_builders</a></li>
+<li>build_player()&#160;:&#160;<a class="el" href="namespaceobject__builders.html#a87b783345e94413dac6c91d06e7a2e88">object_builders</a></li>
+<li>build_prompt()&#160;:&#160;<a class="el" href="namespaceobject__builders.html#a6ea8e850cb37275121c17aa1f56c5c4c">object_builders</a></li>
+<li>check_level_completion()&#160;:&#160;<a class="el" href="namespacehelper.html#a85dee931e76f3bba286e98df3ce0e024">helper</a></li>
+<li>edit_level()&#160;:&#160;<a class="el" href="namespacehelper.html#ad3aede5ecc211facd27a8b456866184c">helper</a></li>
+<li>find_num_for_enemy()&#160;:&#160;<a class="el" href="namespacehelper.html#aac0fce59a52e34ec74553ab67ff9b16e">helper</a></li>
+<li>find_obj()&#160;:&#160;<a class="el" href="namespaceobjects.html#a0f7aa2ea139c1f27acb8c6b72f8d86a0">objects</a></li>
+<li>find_same_num()&#160;:&#160;<a class="el" href="namespacehelper.html#ae7f51d12dcb50d6c9a508d9ce3c7c0dc">helper</a></li>
+<li>get_edit_type()&#160;:&#160;<a class="el" href="namespacehelper.html#a03f85bcdc0b1497c90972281cbbe8ad1">helper</a></li>
+<li>get_level_config()&#160;:&#160;<a class="el" href="namespaceconfig__manager.html#ab17f744e65817c9f750c735b6284cd60">config_manager</a></li>
+<li>load_animations()&#160;:&#160;<a class="el" href="namespaceobject__builders.html#a13d2da3949ac5c77c47dee48f17207c7">object_builders</a></li>
+<li>main()&#160;:&#160;<a class="el" href="namespacemain.html#a3140e9a5b6a71ffbf498198cfc471b88">main</a></li>
+<li>read_config()&#160;:&#160;<a class="el" href="namespaceconfig__manager.html#a7112a91193564d5a704fd31593977dab">config_manager</a></li>
+<li>write_config()&#160;:&#160;<a class="el" href="namespaceconfig__manager.html#a3a935204c438df97100c15a8dfa49eef">config_manager</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
 </body>
 </html>

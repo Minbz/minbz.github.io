@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['config_5fmanager_0',['config_manager',['../de/dfd/namespaceconfig__manager.html',1,'']]]
+  ['config_5fmanager_0',['config_manager',['../namespaceconfig__manager.html',1,'']]]
 ];
